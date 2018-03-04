@@ -357,7 +357,6 @@ void Authorize(user userToAuthorize){
 	Piezo(3000);
 	Piezo(2000);
 	Piezo(1000);
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 1);
 
 	HAL_GPIO_WritePin(AuthorizationIndicator_Port, AuthorizationIndicator_Pin, 1);
 
