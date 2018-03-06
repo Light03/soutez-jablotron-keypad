@@ -145,12 +145,6 @@ static void MX_TIM22_Init(void);
 
 /* USER CODE BEGIN 0 */
 
-void InitializeDisplaySPI(){
-
-	//int n = sizeof(initialization_instructions) / sizeof(initialization_instructions[0]);
-
-}
-
 int CheckKey(GPIO_TypeDef* ColumnGPIOx, uint16_t ColumnGPIO_Pin,GPIO_TypeDef* RowGPIOx, uint16_t RowGPIO_Pin){
 	if(HAL_GPIO_ReadPin(ColumnGPIOx, ColumnGPIO_Pin) && HAL_GPIO_ReadPin(RowGPIOx, RowGPIO_Pin)){
 		HAL_Delay(50);
